@@ -1,0 +1,14 @@
+html, body {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #ffffff; }
+
+input {
+  padding: 5px 15px;
+  margin: 0; }
+  input:focus {
+    outline: none; }
+
+/*# sourceMappingURL=styles.css.map */

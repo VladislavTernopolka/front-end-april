@@ -1,0 +1,46 @@
+.logo {
+	float: left;
+}
+
+.logo a {
+	font-size: 40px;
+	width: 227px;
+	height: 29px;
+	display: block;
+	background: url(img/logo.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.nav {
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.nav ul li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav ul li+li {
+	margin: 0 0 0 23px;
+}
+
+nav ul a {
+	display: block;
+	color: #fff;
+}
+
+.nav ul .active a,
+.nav ul a:hover {
+	color: #ffc600;
+	text-decoration: underline;
+}
