@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    background: #ebebeb;
+    color: #494949;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 1054px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+h1,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+article,
+section,
+nav,
+main {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.content {
+	width: 652px;
+	margin-left: 34px;
+	float: left;
+}
+
+aside {
+	width: 344px;
+	float: right;
+}
+
+/*LOGO*/
+
+.logo {
+    float: left;
+    margin: 24px 0 0 31px;
+}
+
+.logo a {
+    font-size: 40px;
+    width: 187px;
+    height: 64px;
+    display: inline-block;
+    background: url(img/logo.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+
+/*SEARCH*/
+
+.button {
+    height: 36px;
+    width: 120px;
+    background: #00aedb;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+}
+
+.search-button {
+    height: 36px;
+    width: 318px;
+    border: 1px solid #e5e5e5;
+    float: left;
+}
+
+.search {
+    display: inline-block;
+    margin: 61px 0 0 101px;
+    float: left;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+/*SPRITE*/
+
+.topmenu-sprite {
+    float: right;
+    padding-right: 32px;
+}
+
+.topmenu-sprite ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topmenu-sprite ul li {
+    display: inline
+}
+
+.topmenu-sprite ul li<li {
+    margin-right: 32px;
+}
+
+.topmenu-sprite ul li a {
+    background: url(img/img-sprite.png)no-repeat;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-top: 58px;
+}
+
+.topmenu-sprite ul li a.rss {
+    background-position: -19px -16px;
+}
+
+.topmenu-sprite ul li a.facebook {
+    background-position: -136px -16px;
+}
+
+.topmenu-sprite ul li a.twitter {
+    background-position: -250px -16px;
+}
+
+
+/*NAV*/
+
+#nav {
+    width: 992px;
+    height: 36px;
+    background-color: #898989;
+    float: left;
+    margin: 21px 31px 0 31px;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#nav ul li {
+    display: inline;
+    float: left;
+}
+
+#nav ul li {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 11px 0;
+    box-sizing: border-box;
+}
+
+#nav ul li a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-button1 {
+    width: 88px;
+    height: 36px;
+    background-color: #00aedb;
+}
+
+.nav-button2 {
+    width: 99px;
+    height: 36px;
+    background-color: #8cc63f;
+}
+
+.nav-button3 {
+    width: 107px;
+    height: 36px;
+    background-color: #5251ac;
+}
+
+.nav-button4 {
+    width: 169px;
+    height: 36px;
+    background-color: #00aedb;
+}
+
+.nav-button5 {
+    width: 105px;
+    height: 36px;
+    background-color: #f78f1d;
+}
+
+.nav-button6 {
+    width: 113px;
+    height: 36px;
+    background-color: #ff0000;
+}
+
+.nav-button7 {
+    width: 160px;
+    height: 36px;
+    background: #898989;
+}
+
+
+/*GALLERY*/
+
+.gallery h1 {
+    color: #00aedb;
+    text-transform: uppercase;
+    padding: 13px 0 13px 33px;
+    font-size: 19px;
+    position: relative;
+}
+
+.gallery {
+    display: inline-block;
+    width: 997px;
+    margin: 0 25px 0 31px;
+}
+
+.caption p {
+    width: 326px;
+    height: 36px;
+}
+
+h3.cinema a {
+	color: #ffffff;
+}
+
+h3.travel a{
+	color: #ffffff;
+}
+
+h3.television a{
+	color: #ffffff;
+}
+
+h3.cinema {
+    display: block;
+    font-size: 19px;
+    background: #00aedb;
+    width: 326px;
+    height: 36px;
+    margin: 3px 0;
+}
+
+h3.travel {
+    display: block;
+    font-size: 19px;
+    background: #f78f1d;
+    width: 326px;
+    height: 36px;
+    margin: 3px 0;
+}
+
+h3.television {
+    display: block;
+    font-size: 19px;
+    background: #ec09bd;
+    width: 326px;
+    height: 36px;
+    margin: 3px 0;
+}
+
+div.gallery-img1 {
+    float: left;
+}
+
+.gallery-img2 {
+    float: left;
+}
+
+.gallery-img3 {
+    float: left;
+}
+
+.gallery-img1 {
+    margin-right: 9px;
+}
+
+.gallery-img3 {
+    margin-left: 9px;
+}
+
+/*POST*/
+
+.post p {
+	line-height: 16px;
+}
+
+h3.post-title {
+	display: block;
+	font-size: 35px;
+	color: #000000;
+}
+
+
+.img-post {
+	float: left;
+	background-color: #fafafa;
+	border: 1px solid #bfbfbf;
+	padding: 12px 11px 11px 12px;
+}
+
+ul.small-image {
+	font-size: 0;
+	padding: 0;
+}
+
+ul.small-image li{
+	display: inline-block;
+	list-style: none;
+}
+
+.smimg1, .smimg2 {
+	padding-right: 13px; 
+}
+
+.smimg3 {
+	padding-right: 12px;
+
+}
+
+.post-info ul {
+	display: inline-block;
+	padding: 0;
+	margin-top: 13px;
+}
+
+
+.post-info ul li {
+display: inline-block;
+list-style: none;
+}
+
+.readmore {
+	padding-left: 298px;
+}
+
+.comment {
+	margin-left: 14px;
+	padding-left: 57px;
+	background: url('img/comment.png') no-repeat;
+	width: 17px;
+	height: 17px;
+}
+
+.category {
+	padding-left: 9px;
+}
+
+
+/*SIDEBAR*/
+
+
+
+
+.button-tps {
+	display: inline-block;
+	float: left;
+	box-sizing: border-box;
+	width: 163px;
+	height: 36px;
+	padding: 12px 0 10px 0;
+	background-color: #5261ac;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+}
+
+.button-tps-tr {
+	display: inline-block;
+	float: left;
+	width: 0;
+	height: 0;
+	border-bottom: 36px solid #5261ac;
+	border-right: 34px solid transparent;
+}
+
+
+.tp-cat {
+	display: inline-block;
+	padding: 0;
+}
+
+.tp-cat li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+}
+
+.button-fasion {
+	display: inline-block;
+	width: 96px;
+	height: 36px;
+	background-color: #ec09bd;
+	box-sizing: border-box;
+	color: #ffffff;
+	text-align: center;
+	padding: 12px 0 10px 0;
+}
+
+.button-cinema {
+	display: inline-block;
+	width: 97px;
+	height: 36px;
+	background-color: #f78f1d;
+	box-sizing: border-box;
+	color: #ffffff;
+	text-align: center;
+	padding: 12px 0 10px 0;
+}
+
+.button-television {
+	display: inline-block;
+	width: 132px;
+	height: 36px;
+	background-color: #00aedb;
+	box-sizing: border-box;
+	color: #ffffff;
+	text-align: center;
+	padding: 12px 0 10px 0;
+}
