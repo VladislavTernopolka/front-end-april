@@ -14,7 +14,9 @@ body {
 }
 
 h1,
-h3 {
+h3,
+h4,
+h5 {
     margin: 0;
     padding: 0;
 }
@@ -256,6 +258,8 @@ h3.television a{
 	color: #ffffff;
 }
 
+/*убрать высоту и выстовлять падингами и лан хейтом*/
+
 h3.cinema {
     display: block;
     font-size: 19px;
@@ -263,6 +267,8 @@ h3.cinema {
     width: 326px;
     height: 36px;
     margin: 3px 0;
+    box-sizing: border-box;
+    padding: 11px 0 11px 31px;
 }
 
 h3.travel {
@@ -360,7 +366,7 @@ list-style: none;
 
 .comment {
 	margin-left: 14px;
-	padding-left: 57px;
+	padding-left: 31px;
 	background: url('img/comment.png') no-repeat;
 	width: 17px;
 	height: 17px;
@@ -377,19 +383,25 @@ list-style: none;
 
 
 .button-tps {
+    margin-right: 34px;
+    width: 163px;
 	display: inline-block;
-	float: left;
 	box-sizing: border-box;
-	width: 163px;
+    position: relative;
 	height: 36px;
 	padding: 12px 0 10px 0;
 	background-color: #5261ac;
 	text-transform: uppercase;
 	color: #ffffff;
 	text-align: center;
+    margin-bottom: 4px;
 }
 
-.button-tps-tr {
+.button-tps:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    content: '';
 	display: inline-block;
 	float: left;
 	width: 0;
@@ -402,6 +414,7 @@ list-style: none;
 .tp-cat {
 	display: inline-block;
 	padding: 0;
+    margin: 0;
 }
 
 .tp-cat li {
@@ -441,4 +454,15 @@ list-style: none;
 	color: #ffffff;
 	text-align: center;
 	padding: 12px 0 10px 0;
+}
+
+.tp-cinema h5 {
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    color: #00aedb;
+}
+
+.tp-cinema img {
+    border: 1px solid #c3c3c3;
 }

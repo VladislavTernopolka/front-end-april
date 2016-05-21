@@ -1,0 +1,8 @@
+.header {
+	height: $headerHeigth;
+	background-color: $headerBgColor;
+	margin: $headerMargin;
+	@media screen and (max-width: $tabletDeviceWidth) {
+		height: $headerHeigth / 2;
+	}
+}
