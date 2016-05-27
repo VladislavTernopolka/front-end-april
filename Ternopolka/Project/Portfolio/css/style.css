@@ -26,7 +26,7 @@ header ,footer ,article ,section ,nav ,main {
 }
 
 #header {
-	background: #174245 url(img/Header.png) ;
+	background: #174245 url(../img/Header.png) ;
 	background-repeat: no-repeat;
 	padding: 53px;
 
@@ -54,7 +54,7 @@ header ,footer ,article ,section ,nav ,main {
 	width: 227px;
 	height: 29px;
 	display: block;
-	background: url(img/logo.png) no-repeat;
+	background: url(../img/logo.png) no-repeat;
 	text-indent: -9999px;
 	overflow: hidden;
 }
@@ -166,11 +166,13 @@ nav ul a {
 	width: 279px;
 }
 
-.post .image-holder img {
+.image-holder img {
 	vertical-align: top;
-	padding: 6px;
-	border: 1px solid #eeeedc;
-	margin: 0 0 5px;
+	background: url(../img/img.png) no-repeat;
+	width: 279px;
+	height: 250px;
+	margin-bottom: 5px;
+	text-indent: -9999px;
 }
 
 .post .image-holder .more {
@@ -246,7 +248,7 @@ nav ul a {
 	padding: 18px 0 38px;
 	display: block;
 	border-top: 1px solid #eaeaea;
-	background: url() no-repeat 0 17px;
+	background: url(../img/lapki.png) no-repeat 0 17px;
 }
 
 .comment q {
@@ -266,4 +268,40 @@ nav ul a {
 
 .sidebar-block p {
 	margin: 0;
+}
+
+.ads {
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #656565;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	background: url(../img/ads.png) no-repeat;
+	width: 303px;
+	height: 79px;
+	margin: 11px 0;
+	padding-top: 27px;
+}
+
+.footer-logo  {
+	font-size: 40px;
+	width: 107px;
+	height: 10px;
+	display: block;
+	background: url(../img/logo-footer.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	margin-top: 19px;
+	margin-left: 180px;
+}
+
+.copyright {
+	display: inline-block;
+	float: right;
+	margin-top: 19px;
+	margin-right: 160px;
 }
