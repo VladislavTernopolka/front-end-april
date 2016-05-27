@@ -1,16 +1,15 @@
-/*Container*/
+/* Container */
 @import 'layouts/container';
 
-/*Layouts*/
+/* Layouts */
 @import 'layouts/header';
 @import 'layouts/main';
 @import 'layouts/sidebar';
 @import 'layouts/footer';
 
-/block/
+/* Blocks */
 @import 'blocks/elements';
 
-/icons/
+/*icons*/
 
-@import 'icons/icon'
-
+@import 'icons/icon';
