@@ -64,5 +64,20 @@ document.addEventListener( "DOMContentLoaded", function(){
   }
   
   start();
+
+var
+login = document.getElementById('login'),
+password = document.getElementById('password'),
+tryLogin = document.getElementById('try-login')
+emailRegex = /[A-Z0-9a-z._%+-]+@[\w_.]+\.[A-Za-z]{2,6}$/;
+
+
+tryLogin.addEventListener('click', function(event) {
+  event.preventDefault();
+});
+
+
+  // var email = /[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}
   
 }, false );
+
