@@ -6,8 +6,8 @@
  false
  true
  */
-function isArray(item) {  
-  return (typeof item !== undefined && item && item.constructor === Array);
+function isArray(item) {
+    return (typeof item !== undefined && item && item.constructor === Array);
 };
 
 /*
@@ -20,8 +20,13 @@ function isArray(item) {
 
  */
 function cloneArray(array) {
-
+    if (!isArray(array)) {
+        return new message('Error');
+    }
+    var cloneArray = [];
+    return array.slice(0);  
 };
+// +рекурсия
 
 /*
  3. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
@@ -40,7 +45,12 @@ function cloneArray(array) {
 
  */
 function getFirstElements(array, n) {
-
+    if (!isArray(argument)) {
+        return new message('Error');
+    }
+    if (argument[0] < array.length[1]) {
+      return array[0];
+    }
 };
 
 /*
@@ -68,7 +78,7 @@ function getLastElements(array, n) {
  "Red+Green+White+Black"
  */
 function join(array, separator) {
-
+    return myColor.split(',')
 };
 
 /*
@@ -82,10 +92,16 @@ function setDashes(string) {
 
 /*
  7. Write a JavaScript program to sort the items of an array.
- Sample array : var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+ Sample array : var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
  Sample Output : -4,-3,1,2,3,5,6,7,8
  */
 function sort(array) {
+    var array = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+    if (a < b) {
+        return -1;
+    } else if (a > b) {
+        return 1;
+    }
 
 };
 
@@ -203,7 +219,7 @@ function binarySearch(array, target) {
  Expected Output :
  [4, 5, 8, 10, 12, 13]
  */
-function sumOfInvidual(array1,array2) {
+function sumOfInvidual(array1, array2) {
 
 };
 
@@ -451,47 +467,47 @@ function rangeBetween(start, end) {
 }
 
 var ArraysTasks = {
-  isArray              : isArray,
-  cloneArray           : cloneArray,
-  getFirstElements     : getFirstElements,
-  getLastElements      : getLastElements,
-  join                 : join,
-  setDashes            : setDashes,
-  sort                 : sort,
-  mostFrequent         : mostFrequent,
-  swapLetter           : swapLetter,
-  getNestedArray       : getNestedArray,
-  sumSquares           : sumSquares,
-  sumArrayInteger      : sumArrayInteger,
-  addToArray           : addToArray,
-  removeDuplicate      : removeDuplicate,
-  displayColor         : displayColor,
-  leapYear             : leapYear,
-  shuffleArray         : shuffleArray,
-  binarySearch         : binarySearch,
-  sumOfInvidual        : sumOfInvidual,
-  findDuplicate        : findDuplicate,
-  flattenNested        : flattenNested,
-  computeUnion         : computeUnion,
-  difference           : difference,
-  removeFalse          : removeFalse,
-  sortByTitle          : sortByTitle,
-  pairOfEqualsSum      : pairOfEqualsSum,
-  retrieveValue        : retrieveValue,
-  longestSubstring     : longestSubstring,
-  suppliedBounds       : suppliedBounds,
-  merge                : merge,
-  removeElement        : removeElement,
-  findElement          : findElement,
-  keepOriginal         : keepOriginal,
-  nthLargest           : nthLargest,
-  randomElement        : randomElement,
-  fillSpecifiedNumeric : fillSpecifiedNumeric,
-  fillSpecifiedString  : fillSpecifiedString,
-  move                 : move,
-  filter               : filter,
-  arrayRange           : arrayRange,
-  rangeBetween         : rangeBetween
+    isArray: isArray,
+    cloneArray: cloneArray,
+    getFirstElements: getFirstElements,
+    getLastElements: getLastElements,
+    join: join,
+    setDashes: setDashes,
+    sort: sort,
+    mostFrequent: mostFrequent,
+    swapLetter: swapLetter,
+    getNestedArray: getNestedArray,
+    sumSquares: sumSquares,
+    sumArrayInteger: sumArrayInteger,
+    addToArray: addToArray,
+    removeDuplicate: removeDuplicate,
+    displayColor: displayColor,
+    leapYear: leapYear,
+    shuffleArray: shuffleArray,
+    binarySearch: binarySearch,
+    sumOfInvidual: sumOfInvidual,
+    findDuplicate: findDuplicate,
+    flattenNested: flattenNested,
+    computeUnion: computeUnion,
+    difference: difference,
+    removeFalse: removeFalse,
+    sortByTitle: sortByTitle,
+    pairOfEqualsSum: pairOfEqualsSum,
+    retrieveValue: retrieveValue,
+    longestSubstring: longestSubstring,
+    suppliedBounds: suppliedBounds,
+    merge: merge,
+    removeElement: removeElement,
+    findElement: findElement,
+    keepOriginal: keepOriginal,
+    nthLargest: nthLargest,
+    randomElement: randomElement,
+    fillSpecifiedNumeric: fillSpecifiedNumeric,
+    fillSpecifiedString: fillSpecifiedString,
+    move: move,
+    filter: filter,
+    arrayRange: arrayRange,
+    rangeBetween: rangeBetween
 };
 
 module.exports = ArraysTasks;

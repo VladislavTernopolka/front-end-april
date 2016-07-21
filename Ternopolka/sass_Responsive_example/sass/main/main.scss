@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Ternopolka/sass_Responsive_example/sass/main/main.scss
 /* Container */
 @import 'layouts/container';
 
@@ -13,3 +14,16 @@
 /*icons*/
 
 @import 'icons/icon';
+=======
+/* Container */
+@import 'layouts/container';
+
+/* Layouts */
+@import 'layouts/header';
+@import 'layouts/main';
+@import 'layouts/sidebar';
+@import 'layouts/footer';
+
+/* Blocks */
+@import 'blocks/elements';
+>>>>>>> eea4e6bda375fc16891b3a396ee076b36de8b909:Responsive_example/sass/main/main.scss
