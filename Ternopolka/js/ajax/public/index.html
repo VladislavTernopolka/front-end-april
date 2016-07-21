@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>What page?</p>
+    <form>
+        <input onclick="showContent('page1.html')" type="button" value="Page1">
+        <input onclick="showContent('page2.html')" type="button" value="Page2">
+    </form>
+
+    <div id="contentBody"></div>
+    <script>
+    var Myobject = {};
+    var pageHolder = document.getElementById('contentBody');
+    	function showContent(page) {
+    		if (Myobject[page]) {
+    			pageHolder.innerHTML = Myobject[page];
+    			return;
+    		}
+
+    		var xhr = new XMLHttpRequest();
+
+    		xhr.open('GET', 'http://192.168.1.74:4730/' + page, true);
+
+    		xhr.onreadystatechange = function() {
+    			if (xhr.readyState == xhr.DONE && xhr.status == 200) {
+    				pageHolder.innerHTML = xhr.response;
+    				Myobject[page] = xhr.response;
+    			}
+    			if (xhr.readyState == xhr.DONE && xhr.status != 200) {
+    				alert(xhr.response);
+    			}
+    		}
+    		xhr.send();
+    	}
+    </script>
+</body>
+
+</html>
