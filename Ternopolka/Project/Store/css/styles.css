@@ -58,31 +58,31 @@ table {
   width: 1500px;
   margin: auto; }
 
-header {
-  background-color: #fcfcfc; }
+#header {
+  background: #fcfcfc; }
 
-.language {
-  text-decoration: none;
+.dropdown-left {
   float: left; }
+  .dropdown-left .drobdown-left__link {
+    text-decoration: none; }
 
-.find-store {
-  text-decoration: none;
+.dropdown-right {
   float: right; }
-
-.account {
-  float: right;
-  text-decoration: none;
-  padding-right: 26px; }
+  .dropdown-right__link {
+    display: inline-block;
+    text-decoration: none; }
+    .dropdown-right__link--padding {
+      padding-right: 26px; }
 
 .logo {
   display: inline-block;
-  font-family: 'Lato-Regular';
-  font-size: 20px;
-  font-weight: bold;
-  color: #656363; }
+  font: 20px 'Lato-Regular' bold;
+  color: #989898; }
 
 #nav-menu li {
-  display: inline-block; }
+  display: inline-block;
+  font: 16px 'Lato-Regular';
+  color: #989898; }
 #nav-menu a {
   text-decoration: none; }
 

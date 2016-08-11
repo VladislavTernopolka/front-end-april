@@ -1,28 +1,28 @@
-header {
-    background-color: $headerColor;
+#header {
+    background: $headerColor;
 }
 
-.language {
-    text-decoration: none;
+.dropdown-left {
+    .drobdown-left__link {
+        text-decoration: none;
+    }
     float: left;
 }
 
-.find-store {
-    text-decoration: none;
+.dropdown-right {
     float: right;
-}
-
-.account {
-    float: right;
-    text-decoration: none;
-    padding-right: 26px;
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        &--padding {
+            padding-right: 26px;
+        }
+    }
 }
 
 .logo {
     display: inline-block;
-    font-family: 'Lato-Regular';
-    font-size: 20px;
-    font-weight: bold;
+    font: 20px 'Lato-Regular' bold;
     color: $logoColor;
 }
 
@@ -30,6 +30,8 @@ header {
     ul {}
     li {
         display: inline-block;
+        font: 16px 'Lato-Regular';
+        color: $navBarColor;
     }
     a {
         text-decoration: none;
