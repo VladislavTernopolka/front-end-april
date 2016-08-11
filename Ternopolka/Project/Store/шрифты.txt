@@ -1,0 +1,4 @@
+1.lato regular
+2.lato bold
+3.socialico
+4.opensans bolditalic

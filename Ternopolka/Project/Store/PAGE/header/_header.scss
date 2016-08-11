@@ -1,0 +1,37 @@
+header {
+    background-color: $headerColor;
+}
+
+.language {
+    text-decoration: none;
+    float: left;
+}
+
+.find-store {
+    text-decoration: none;
+    float: right;
+}
+
+.account {
+    float: right;
+    text-decoration: none;
+    padding-right: 26px;
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'Lato-Regular';
+    font-size: 20px;
+    font-weight: bold;
+    color: $logoColor;
+}
+
+#nav-menu {
+    ul {}
+    li {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+    }
+}
